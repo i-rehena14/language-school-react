@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
@@ -19,16 +18,16 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route path="/home">
+          <Route exact path="/home">
             <Home></Home>
           </Route>
-          <Route path="/services">
+          <Route exact path="/services">
             <Services></Services>
           </Route>
-          <Route path="/faq">
+          <Route exact path="/faq">
             <FAQ></FAQ>
           </Route>
-          <Route path="/about">
+          <Route exact path="/about">
             <About></About>
           </Route>
           <Route path="*">

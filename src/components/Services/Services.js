@@ -4,12 +4,14 @@ import { Card, Col, Row } from 'react-bootstrap';
 const Services = (props) => {
     const [services, setServices] = useState([]);
     useEffect(() => {
+        // ---fakedata load----- 
         fetch('./language.json')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
     return (
         <div>
+            {/* ---------All services--------- */}
             <h2 className="m-4">All Services</h2>
             {
                 <Row xs={1} md={4} className="g-4">

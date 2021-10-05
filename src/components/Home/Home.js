@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Carousel, Col, Row } from 'react-bootstrap';
-import Services from '../Services/Services';
 
 const Home = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
+        // ---------fakedata load-------
         fetch('./language.json')
             .then(res => res.json())
             .then(data => setServices(data))
@@ -12,45 +12,47 @@ const Home = () => {
     const slicedServices = services.slice(0, 4);
     return (
         <div>
-
+            {/* -------------Slider section-------- */}
             <Carousel className="m-4" variant="dark">
                 <Carousel.Item>
                     <img
-                        className="d-block"
+                        className="d-block carousel-img"
                         src="https://image.freepik.com/free-vector/two-women-sit-desk-talk_141192-974.jpg"
                         alt="First slide"
                     />
+
                     <Carousel.Caption>
-                        <h3>To have another
+                        <h3 className="text-success">To have another
                             language is to possess
                             a second soul.</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block"
+                        className="d-block carousel-img"
                         src="https://image.freepik.com/free-vector/students-are-studying-english-girl-shows-her-classmate-how-pronounce-th-sound_141192-1211.jpg"
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h3>Every student matters,
+                        <h3 className="text-success">Every student matters,
                             every moment counts.</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block"
+                        className="d-block carousel-img"
                         src="https://image.freepik.com/free-vector/teacher-whiteboard-explains-grammar-pupils_141192-1214.jpg"
                         alt="Third slide"
                     />
                     <Carousel.Caption>
-                        <h3>Teaching Turning
+                        <h3 className="text-success">Teaching Turning
                             Today’s Learners Into
                             Tomorrow’s Leaders</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <h3 className="m-4">Our Services</h3>
+            {/* ----------services----------- */}
+            <h3 className="m-4 pt-4">Our Services</h3>
             {
                 <Row xs={1} md={4} className="g-4 m-2">
                     {

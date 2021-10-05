@@ -1,12 +1,13 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     const activeStyle = {
         fontWeight: "bold",
-        color: "white",
-        backgroundColor: "lightblue"
+        backgroundColor: "#8FBC8F",
+        border: "2px solid green",
+        borderRadius: '5px',
+        padding: '7px'
     };
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-success">
@@ -17,10 +18,10 @@ const Header = () => {
                 </button>
                 <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav ">
-                        <NavLink className="text-white navbar-brand me-4" to="/home">Home</NavLink>
-                        <NavLink className="text-white navbar-brand me-4" to="/services">Services</NavLink>
-                        <NavLink className="text-white navbar-brand me-4" to="/faq">FAQ</NavLink>
-                        <NavLink className="text-white navbar-brand me-4" to="/about">About Us</NavLink>
+                        <NavLink activeStyle={activeStyle} className="text-white navbar-brand me-4" to="/home">Home</NavLink>
+                        <NavLink activeStyle={activeStyle} className="text-white navbar-brand me-4" to="/services">Services</NavLink>
+                        <NavLink activeStyle={activeStyle} className="text-white navbar-brand me-4" to="/faq">FAQ</NavLink>
+                        <NavLink activeStyle={activeStyle} className="text-white navbar-brand me-4" to="/about">About Us</NavLink>
                     </div>
                 </div>
             </div>
