@@ -8,7 +8,7 @@ const About = () => {
         fetch('./instructor.json')
             .then(res => res.json())
             .then(data => setInstructors(data))
-    }, [])
+    }, []);
     return (
         <div className="h-100">
             <div className="">

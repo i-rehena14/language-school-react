@@ -1,0 +1,22 @@
+.carousel{
+    background-color:rgb(173, 226, 189);
+
+}
+.carousel-img{
+    width:70%;
+}  
+.caption{
+    color: rgb(88, 148, 98);
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.caption2{
+    color: rgb(35, 58, 32);
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.caption3{
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
